@@ -23,6 +23,7 @@ main {
 
 header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -118,4 +119,23 @@ a:link, a:visited, a:active {
         width: 45%
     }
     
+}
+
+.pulse {
+    position: relative;
+    top: 16px;
+    background: linear-gradient(to right, #444444, #ffffff);
+    height: 1px;
+    width: 100%;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
 }
