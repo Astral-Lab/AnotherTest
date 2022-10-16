@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #444444;
+    color: whitesmoke;
+    font-family: 'Gemunu Libre', sans-serif;
+    letter-spacing: .10rem;
+    
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    background-color: black;
+}
+
+.space-below {
+    margin-bottom: 1rem;
+}
+
+.space-above {
+    margin-top: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+}
+
+.flex-item {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.content {
+    width: 100%;
+    min-height: 100px;
+    background-color: #E74C3C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+/** Define Individual Raid Themes */
+.kings-fall {
+    background-color: #65081f;
+}
+
+.vow {
+    background-color: #355e3b;
+}
+
+.redacted {
+    background-color: #2990B5;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+.logo-container {
+    width: 30px;
+    height: 30px;
+    
+}
+
+a:link, a:visited, a:active {
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .flex-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .flex-item {
+        width: 45%
+    }
+    
+}
